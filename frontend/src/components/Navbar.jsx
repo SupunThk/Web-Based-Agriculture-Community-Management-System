@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import UserMenu from './UserMenu';
 
 const Navbar = () => {
     return (
@@ -18,6 +19,7 @@ const Navbar = () => {
                         <li className="nav-item"><Link className="nav-link text-white" to="/ai">AI</Link></li>
                         <li className="nav-item"><Link className="nav-link text-white" to="/admin">Admin Panel</Link></li>
                     </ul>
+                    <UserMenu />
                 </div>
             </div>
         </nav>
