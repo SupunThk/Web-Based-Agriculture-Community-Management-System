@@ -19,9 +19,8 @@ const DiseaseRegistry = () => (
           <div className="flex items-center gap-4">
             <div className="text-right">
               <p className="text-xs text-gray-400">Severity</p>
-              <span className={`text-xs font-bold ${
-                disease.severity === 'High' ? 'text-red-600' : 'text-yellow-600'
-              }`}>{disease.severity}</span>
+              <span className={`text-xs font-bold ${disease.severity === 'High' ? 'text-red-600' : 'text-yellow-600'
+                }`}>{disease.severity}</span>
             </div>
             <div className="text-right">
               <p className="text-xs text-gray-400">Reports</p>

@@ -4,7 +4,7 @@ const StatCard = ({ title, value, change, icon: Icon, color }) => {
   const isPositive = change.startsWith('+');
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100/50">
+    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
       <div className="flex justify-between items-start">
         <div>
           <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider">{title}</p>
@@ -19,8 +19,8 @@ const StatCard = ({ title, value, change, icon: Icon, color }) => {
           </div>
         </div>
 
-        <div className={`p-3.5 rounded-xl ${color} bg-opacity-10 backdrop-blur-sm`}>
-          <Icon size={26} className={color.replace('bg-', 'text-')} />
+        <div className={`p-3.5 rounded-2xl ${color} bg-opacity-10`}>
+          <Icon size={24} className={color.replace('bg-', 'text-')} />
         </div>
       </div>
     </div>

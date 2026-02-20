@@ -43,11 +43,10 @@ const MarketplaceManagement = () => {
             <button
               key={status}
               onClick={() => setActiveFilter(status)}
-              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                activeFilter === status
+              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${activeFilter === status
                   ? 'bg-green-600 text-white shadow-md shadow-green-200'
                   : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 border-transparent'
-              }`}
+                }`}
             >
               {status}
             </button>
@@ -72,10 +71,10 @@ const MarketplaceManagement = () => {
               <tr key={listing.id} className="hover:bg-gray-50/50 transition-colors group">
                 <td className="px-6 py-4">
                   <div className="flex items-center gap-4">
-                    <img 
-                      src={listing.image} 
-                      alt={listing.title} 
-                      className="w-12 h-12 rounded-lg object-cover border border-gray-200 shadow-sm group-hover:scale-105 transition-transform" 
+                    <img
+                      src={listing.image}
+                      alt={listing.title}
+                      className="w-12 h-12 rounded-lg object-cover border border-gray-200 shadow-sm group-hover:scale-105 transition-transform"
                     />
                     <div>
                       <span className="font-bold text-gray-800 block text-sm group-hover:text-green-700 transition-colors">
@@ -94,11 +93,10 @@ const MarketplaceManagement = () => {
                   <span className="text-xs text-gray-400">{listing.date}</span>
                 </td>
                 <td className="px-6 py-4">
-                  <span className={`px-2.5 py-1 rounded-full text-xs font-bold flex w-fit items-center gap-1.5 ${
-                    listing.status === 'Active' ? 'bg-green-50 text-green-700 border border-green-100' :
-                    listing.status === 'Rejected' ? 'bg-red-50 text-red-700 border border-red-100' :
-                    'bg-yellow-50 text-yellow-700 border border-yellow-100'
-                  }`}>
+                  <span className={`px-2.5 py-1 rounded-full text-xs font-bold flex w-fit items-center gap-1.5 ${listing.status === 'Active' ? 'bg-green-50 text-green-700 border border-green-100' :
+                      listing.status === 'Rejected' ? 'bg-red-50 text-red-700 border border-red-100' :
+                        'bg-yellow-50 text-yellow-700 border border-yellow-100'
+                    }`}>
                     {listing.status}
                   </span>
                 </td>

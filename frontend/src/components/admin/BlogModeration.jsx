@@ -64,8 +64,8 @@ const BlogModeration = () => {
               key={status}
               onClick={() => setActiveFilter(status)}
               className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${activeFilter === status
-                  ? 'bg-green-600 text-white shadow-md shadow-green-200'
-                  : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 border-transparent'
+                ? 'bg-green-600 text-white shadow-md shadow-green-200'
+                : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 border-transparent'
                 }`}
             >
               {status}
@@ -104,8 +104,8 @@ const BlogModeration = () => {
                     </h3>
                     {viewMode === 'list' && (
                       <span className={`shrink-0 px-2.5 py-1 rounded-full text-xs font-bold border ${blog.status === 'Approved' ? 'bg-green-50 text-green-700 border-green-100' :
-                          blog.status === 'Rejected' ? 'bg-red-50 text-red-700 border-red-100' :
-                            'bg-yellow-50 text-yellow-700 border-yellow-100'
+                        blog.status === 'Rejected' ? 'bg-red-50 text-red-700 border-red-100' :
+                          'bg-yellow-50 text-yellow-700 border-yellow-100'
                         }`}>
                         {blog.status}
                       </span>
